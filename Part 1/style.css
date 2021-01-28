@@ -1,19 +1,98 @@
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook  might be very useful for finding a solution for the layout
 https://developer.mozilla.org/en-us/docs/Web/CSS/Media_Queries */
-body {}
-        
-.header {
-    padding: 50px 20px 0px 0px;
-    float: left;
+section {
+    width: 100%;
     background-image: url("rsc/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    padding: 100px 100px 100px 100px;
 }
 
-#h1 {
-    max-width: 50px;
-    word-wrap: break-word;
+
+
+h1 {
+    float:left;
+    width: 30%;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(300,43%,22%);
 }
 
+.under_title {
+    width: 25%;
+    clear: left;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    color: lightgray;
+}
 .reviews {
-    position: absolute;
-    right: 400px;
+    clear:none;
+    float: right;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    color: hsl(300,43%,22%);
+    margin: 5pc 10pc 0 0px;
+    width: 50%;
+
+}
+
+.reviews p{
+    background-color: hsl(300,24%,96%);
+    height: 50px;
+    text-align: center;
+    white-space: pre;
+    font-weight:900;
+}
+
+#r_1 {
+    margin: 0 400px 0 0;
+}
+#r_2 {
+    margin: 20px 350px 0 50px;
+}
+#r_3 {
+    margin: 20px 300px 0 100px;
+}
+.buyers {
+    background-image: url("rsc/bg-pattern-bottom-desktop.svg");
+    background-image: no-repeat; 
+    margin-left: 50px;
+}
+.buyer { 
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: hsl(0,0%,100%);
+    float:left;
+    border-radius: 5px;
+    width: 20%;
+    margin: 0px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
+    background-color:hsl(300,43%,22%);
+}
+
+.profile {
+    align-items:center;
+}
+.name { 
+    text-align: center;
+    white-space: pre;
+    
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);  
+    font-weight:lighter;
+
+}
+.image {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 10%;
+}
+.two {
+    margin-top: 2%;
+}
+.three {
+    margin-top: 4%;
 }
