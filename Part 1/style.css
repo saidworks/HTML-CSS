@@ -23,7 +23,7 @@ h1 {
     clear: left;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-    color: lightgray;
+    color:hsl(303,10%,53%);
 }
 .reviews {
     clear:none;
@@ -54,6 +54,9 @@ h1 {
     margin: 20px 300px 0 100px;
 }
 .buyers {
+    position: absolute;
+    height: 50%;
+    width: 100%;
     background-image: url("rsc/bg-pattern-bottom-desktop.svg");
     background-image: no-repeat; 
     margin-left: 50px;
@@ -81,8 +84,11 @@ h1 {
 }
 
 .verified {
-    color: hsl(333, 80%, 67%);  
+    color: hsl(333, 80%, 67%);
+    display: block;  
     font-weight:lighter;
+    padding-left: 10%;
+    margin-top: -2%;
 
 }
 .image {
