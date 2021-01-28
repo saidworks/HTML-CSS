@@ -1,0 +1,19 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook  might be very useful for finding a solution for the layout
+https://developer.mozilla.org/en-us/docs/Web/CSS/Media_Queries */
+body {}
+        
+.header {
+    padding: 50px 20px 0px 0px;
+    float: left;
+    background-image: url("rsc/bg-pattern-top-desktop.svg");
+}
+
+#h1 {
+    max-width: 50px;
+    word-wrap: break-word;
+}
+
+.reviews {
+    position: absolute;
+    right: 400px;
+}
