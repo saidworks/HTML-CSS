@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;500;700&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Spartan';
+}
+
+section {
+    display: flex;
+    background-image: url("rsc/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 80px 38px;
+    justify-content: center;
+    align-content: center;
+}
+
+.title h1 {
+    font-size: 50px;
+}
+
+.title {
+    width: 30%;
+}
+
+.rating {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 13px;
+    border-radius: 6px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 17px;
+    white-space: pre;
+    width: 390px;
+}
+
+.rating:nth-child(2) {
+    margin-left: 40px;
+}
+
+.rating:nth-child(3) {
+    margin-left: 60px;
+}
+
+.buyers {
+    background-image: url(rsc/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 50px;
+}
+
+.buyer {
+    height: 20%;
+    margin: 3%;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 4%;
+    padding: 2%;
+    color: hsl(300, 24%, 96%);
+    white-space: normal;
+}
+
+.profil {
+    padding: 0% 0 15% 0;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.image {
+    float: left;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.name {
+    text-align: left;
+    display: block;
+}
+
+.verified {
+    color: hsl(333, 80%, 67%);
+    display: block;
+    text-align: left;
+}
+
+.buyer:nth-child(2) {
+    margin-top: 5%;
+}
+
+.buyer:nth-child(3) {
+    margin-top: 7%;
+}

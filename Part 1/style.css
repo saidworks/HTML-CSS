@@ -1,5 +1,6 @@
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook  might be very useful for finding a solution for the layout
 https://developer.mozilla.org/en-us/docs/Web/CSS/Media_Queries */
+
 section {
     width: 100%;
     background-image: url("rsc/bg-pattern-top-desktop.svg");
@@ -7,15 +8,13 @@ section {
     padding: 100px 100px 100px 100px;
 }
 
-
-
 h1 {
-    float:left;
-    width: 30%;
+    float: left;
+    width: 25%;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Spartan', sans-serif;
-    color: hsl(300,43%,22%);
+    color: hsl(300, 43%, 22%);
 }
 
 .under_title {
@@ -23,82 +22,88 @@ h1 {
     clear: left;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-    color:hsl(303,10%,53%);
+    color: hsl(303, 10%, 53%);
 }
+
 .reviews {
-    clear:none;
+    clear: none;
     float: right;
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
-    color: hsl(300,43%,22%);
+    color: hsl(300, 43%, 22%);
     margin: 5pc 10pc 0 0px;
-    width: 50%;
-
+    width: 60%;
 }
 
-.reviews p{
-    background-color: hsl(300,24%,96%);
+.reviews p {
+    background-color: hsl(300, 24%, 96%);
     height: 50px;
     text-align: center;
     white-space: pre;
-    font-weight:900;
+    font-weight: 900;
 }
 
 #r_1 {
     margin: 0 400px 0 0;
 }
+
 #r_2 {
     margin: 20px 350px 0 50px;
 }
+
 #r_3 {
     margin: 20px 300px 0 100px;
 }
+
 .buyers {
     position: absolute;
     height: 50%;
     width: 100%;
     background-image: url("rsc/bg-pattern-bottom-desktop.svg");
-    background-image: no-repeat; 
+    background-image: no-repeat;
     margin-left: 50px;
 }
-.buyer { 
+
+.buyer {
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
     font-weight: normal;
-    color: hsl(0,0%,100%);
-    float:left;
+    color: hsl(0, 0%, 100%);
+    float: left;
     border-radius: 5px;
     width: 20%;
     margin: 0px 20px 0px 20px;
     padding: 20px 20px 20px 20px;
-    background-color:hsl(300,43%,22%);
+    background-color: hsl(300, 43%, 22%);
 }
 
 .profile {
-    align-items:center;
+    align-items: center;
 }
-.name { 
+
+.name {
     text-align: center;
     white-space: pre;
-    
 }
 
 .verified {
     color: hsl(333, 80%, 67%);
-    display: block;  
-    font-weight:lighter;
+    display: block;
+    font-weight: lighter;
     padding-left: 10%;
     margin-top: -2%;
-
 }
+
 .image {
     border-radius: 50%;
     vertical-align: middle;
     width: 10%;
 }
+
 .two {
     margin-top: 2%;
 }
+
 .three {
     margin-top: 4%;
 }
