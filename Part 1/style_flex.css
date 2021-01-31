@@ -70,15 +70,17 @@
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: center;
-            align-items: center;
+            align-items: baseline;
             align-content: center;
             padding: auto;
             margin: auto;
             max-width: 75%;
+            font-size: 2vmax;
         }
         .buyer {
             position: relative;
             align-content: center;
+            left: 10%;
         }
         .image {
             max-width: 100%;
