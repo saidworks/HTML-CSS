@@ -26,11 +26,14 @@ body {
 .Fylo {
     background-color: hsl(228, 56%, 26%);
     width: 20%;
-    border-top-right-radius: 36%;
+    border-top-right-radius: 8vh;
     height: 25vh;
     margin: 5vh 0vw 10vh 20vw;
     padding: 3vh 8vw 3vh 1vw;
     flex-basis: auto;
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
 }
 
 .company-logo {
@@ -81,9 +84,7 @@ body {
     background-color: ivory;
     color: hsl(229, 57%, 11%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 73% 75%, 0% 75%);
-    border-bottom-left-radius: 1vh;
-    border-top-left-radius: 1vh;
-    border
+    border-radius: 1vh;
 }
 
 .slidebar {
