@@ -42,7 +42,7 @@ body {
 .icon {
     width: 1rem;
     height: 1rem;
-    padding: 2vh 1.5vw 2vh 1vw;
+    padding: 2vh 1vw 2vh 0.5vw;
     border-radius: 25%;
     background-color: hsl(229, 57%, 11%);
     background-size: contain;
@@ -52,7 +52,7 @@ body {
 }
 
 .icon:nth-child(2) {
-    padding: 1.5vh 1.25vw 2.5vh 1.25vw;
+    padding: 1.5vh 0.75vw 2.5vh 0.75vw;
 }
 
 .storage {
@@ -65,7 +65,51 @@ body {
     margin: 15vh 2vw 0vh 5vw;
 }
 
+.space-left {
+    position: absolute;
+    text-align: center;
+    margin: -9vh 3vw 10vh 25vw;
+    padding-top: 2vh;
+    max-width: 10vw;
+    height: 5vh;
+    background-color: ivory;
+    color: hsl(229, 57%, 11%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 73% 75%, 0% 75%);
+    border-bottom-left-radius: 1vh;
+    border-top-left-radius: 1vh;
+    border
+}
+
 .slidebar {
-    width: 10vw;
-    color: brown;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 50vw;
+    background-color: inherit;
+}
+
+input[type='range'] {
+    overflow: hidden;
+    width: 30vw;
+    -webkit-appearance: none;
+    background-image: linear-gradient( hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 1vh;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 2vh;
+    -webkit-appearance: none;
+    margin-top: -1px;
+    border-radius: 3vh;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 2vh;
+    -webkit-appearance: none;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 40vw 0 0 40vw hsl(229, 57%, 11%);
 }
