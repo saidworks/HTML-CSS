@@ -71,7 +71,7 @@
         position: absolute;
         text-align: center;
         margin: 10vh 0vw -4vh 12vw;
-        padding: 1vh vw 1vh 0.5vw;
+        padding: 1vh 0vw 1vh 0.5vw;
         max-width: 30vw;
         height: 2vh;
         background-color: ivory;
@@ -80,8 +80,9 @@
         clip-path: ellipse(130px 140px at 10% 20%);
     }
     #volume-used {
-        font-size: 1em;
-        width: 50vw;
+        margin: 1vh -6vw;
+        font-size: 0.7em;
+        width: 65vw;
         flex-wrap: nowrap;
     }
     #bar {
