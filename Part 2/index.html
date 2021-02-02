@@ -3,34 +3,38 @@
 
 <head>
     <title>Data storage status</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="Fylo">
-            <div class=company-logo>
+<body id="mobile">
+    <div class="container" id="container-mobile">
+        <div class="Fylo" id="Fylo">
+            <div class="company-logo" id="company-logo">
                 <img src="images/logo.svg" alt="campany logo">
             </div>
-            <div class="icons">
-                <div class="icon"><img src="images/icon-upload.svg" alt="upload icon"></div>
-                <div class="icon"><img src="images/icon-document.svg" alt="document"></div>
-                <div class="icon"><img src="images/icon-folder.svg" alt="folder"></div>
+            <div class="icons" id="icons">
+                <div class="icon" id="icon1"><img src="images/icon-upload.svg" alt="upload icon"></div>
+                <div class="icon" id="icon2"><img src="images/icon-document.svg" alt="document"></div>
+                <div class="icon" id="icon3"><img src="images/icon-folder.svg" alt="folder"></div>
             </div>
         </div>
-        <div class="storage">
-            <div class="space-left"> 185 GB LEFT</div>
-            <div class="slidebar">
-                <div class="bar">
+        <div class="storage" id="storage">
+            <div class="space-left" id="space-left"> 185 GB LEFT</div>
+            <div class="slidebar" id="slidebar">
+                <div class="bar" id="bar">
                     <label for="volume-used">You've used 815 GB of your storage</label>
-                    <input type="range" name="volume-used" id="volume-used" value="815" max="1000" min="0"></div>
+                    <input type="range" name="volume-used" id="volume-used" value="815" max="1000" min="0">
+                </div>
             </div>
-            <div class="legend">
+            <div class="legend" id="legend">
                 <p>0GB</p>
                 <p>100GB</p>
             </div>
         </div>
-
+    </div>
 </body>
 
 </html>
