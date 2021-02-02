@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+@media (max-width: 400px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 100vw;
+        justify-content: space-between;
+    }
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -9,7 +23,6 @@ main {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: larger;
     margin: 3%;
-    background-color: gray: hsl(0, 0%, 81%);
 }
 
 #one {
@@ -25,8 +38,22 @@ main {
 }
 
 img {
+    float: left;
+    vertical-align: middle;
     border-radius: 50%;
-    border: hsl(0, 0%, 81%) 2%;
+    border: hsl(0, 0%, 81%) solid;
+}
+
+.name {
+    display: block;
+    text-align: left;
+    color: hsl(0, 0%, 81%);
+}
+
+.verified {
+    display: block;
+    text-align: left;
+    color: gray;
 }
 
 #two {
@@ -38,7 +65,7 @@ img {
 }
 
 #three {
-    background-color: blue;
+    background-color: white;
     grid-column: 4;
     grid-row: 1/3;
     border-radius: 3%;
