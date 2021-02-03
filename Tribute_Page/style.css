@@ -1,8 +1,71 @@
-main {
-    background-color: grey;
-    width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@media (max-width: width 400px) {
+  #image-div {
+    max-width: 100vw;
+  }
+  #image-div #img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+body {
+  background-color: lightgrey;
+  width: 100%;
+  height: auto;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+body #title {
+  font-size: 32px;
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+}
+body #title p {
+  color: #70738F;
+  margin: 1%;
+}
+body #img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: white;
+  padding: 1%;
+}
+body #img-div img {
+  max-width: 100%;
+  height: auto;
+}
+body #img-div #img-caption {
+  color: #70738F;
+  margin: 0.5%;
+}
+body #tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin-left: 20%;
+  width: 50%;
+  line-height: 1.8;
+}
+body #tribute-info h3 {
+  font-weight: bold;
+  font-size: 20px;
+  align-self: flex-start;
+}
+body #tribute-info #year {
+  font-weight: bold;
+}
+body #tribute-info #quote {
+  font-style: italic;
+  width: 40%;
+  text-align: center;
 }
 
-#title {
-    background-color: blue;
-}
+/*# sourceMappingURL=style.css.map */
