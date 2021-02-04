@@ -1,46 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-* {
-  font-family: "Poppins", sans-serif;
-}
+/* Error: Expected expression.
+ *    ,
+ * 24 |             grid-column: : 2/4
+ *    |                          ^
+ *    '
+ *   style.sass 24:26  root stylesheet */
 
-body {
-  background-color: #eeeeee;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 24 \2502              grid-column: : 2/4\d\a    \2502                           ^\a    \2575 \a   style.sass 24:26  root stylesheet";
 }
-body #header {
-  display: grid;
-  grid-template-areas: "header-1 . header-2" ". main12 ." "main21 main22 main23" "main31 main32 main33" "main41 main42 main43" "main51 main52 main53" "main51 main52 main53" "footer1 footer2 footer3";
-  max-width: 100%;
-}
-body #header #header-img {
-  grid-area: header-1;
-  max-width: 20%;
-  height: auto;
-}
-body #header ol {
-  grid-area: header-2;
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
-}
-body #main #form {
-  grid-area: main12;
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 5%;
-}
-body #main #form #email {
-  background-color: white;
-  color: gray;
-  width: 20%;
-  margin: 1%;
-  padding: 0.5%;
-}
-body #main #form #submit {
-  background-color: #f1c40f;
-  border-color: #f1c40f;
-  width: 10%;
-  padding: 0.5%;
-}
-
-/*# sourceMappingURL=style.css.map */
