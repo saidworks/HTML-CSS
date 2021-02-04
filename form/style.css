@@ -1,5 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
-  background-image: url("/images/background.jpg");
+  background-color: #3E59C1;
+  color: white;
+  max-width: 80%;
+  margin: auto;
+  font-weight: bold;
+}
+body #survey-form {
+  background-color: #21BDDE;
+  line-height: 2rem;
+  max-width: 60%;
+  margin: 5% 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3%;
+}
+body #survey-form input[type=radio] {
+  color: gray;
+}
+body #title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+body #description {
+  font-size: 20px;
+  margin-top: -2%;
+  text-align: center;
+}
+body #submit {
+  align-self: flex-start;
+  margin-left: 25%;
+  margin-top: 5%;
+  width: 30%;
+  height: 4rem;
+  background-color: #09F666;
+  color: white;
+  font-weight: bold;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
