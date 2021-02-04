@@ -1,0 +1,12 @@
+colors :
+
+background: #eeeeee light grey
+icons: #ff8c00 dark orange 
+text : #1b0016 black
+buttons: #f1c40f light orange
+background-footer:#dddddd darker grey
+
+
+typography: 
+Font-family : Poppins (https://fonts.google.com/specimen/Poppins)
+light regular bold

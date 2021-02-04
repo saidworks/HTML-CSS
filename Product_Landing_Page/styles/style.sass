@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap')
+
+*
+    font-family: 'Poppins', sans-serif 
+
+body
+    background-color: #eeeeee
+    #header
+        display: grid
+        grid-template-areas: "header-1 . header-2" ". main12 ." "main21 main22 main23" "main31 main32 main33" "main41 main42 main43" "main51 main52 main53" "main51 main52 main53" "footer1 footer2 footer3"
+        max-width: 100%
+        #header-img
+            grid-area: header-1
+            max-width: 20%
+            height: auto
+        ol
+            grid-area: header-2
+            max-width: 100%
+            display: flex
+            justify-content: space-between
+            font-size: 1rem
+    #main
+        #form
+            grid-area: main12
+            text-align: center
+            font-size: 1.5rem
+            padding: 5%
+            #email
+                background-color: white
+                color: gray
+                width: 20%
+                margin: 1%
+                padding: 0.5%
+            #submit
+                background-color: #f1c40f
+                border-color: #f1c40f
+                width: 10%
+                padding: 0.5%
