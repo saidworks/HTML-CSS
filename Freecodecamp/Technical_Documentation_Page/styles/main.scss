@@ -1,0 +1,86 @@
+    @import "_variables.scss";
+    @import "typography.scss";
+    html {
+        font-size: 0.625rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: $main-font;
+    }
+    
+    body {
+        display: grid;
+        grid-template-areas: ". . . . . . . . content";
+        background-color: lighten($main-bg-color, 80);
+        grid-gap: 4rem;
+        margin: 3rem;
+        text-justify: inter-word;
+        nav {
+            position: fixed;
+            display: flex;
+            flex: {
+                direction: column;
+                wrap: nowrap;
+            }
+            justify-content: space-between;
+            height: 90%;
+            width: 18%;
+            font-size: $font-nav;
+        }
+        main {
+            grid-area: content;
+            font-size: $font-text;
+        }
+        @media (max-width:40rem) {
+            display: flex;
+            flex-direction: column;
+            nav {
+                position: relative;
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: 80vh;
+                width: 90vw;
+            }
+        }
+    }
+    
+    nav {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 88%;
+        border-right: $border-thick;
+        a {
+            text-decoration: none;
+            width: 20rem;
+            padding: 4% 0%;
+            .line {
+                width: 30rem;
+                padding: 2% 0% 2% 0%;
+                border-bottom: $border;
+            }
+        }
+    }
+    
+    header {
+        font-size: $font-header;
+        font-weight: 700;
+        margin: 1% 0%;
+    }
+    
+    section {
+        margin: 1rem;
+    }
+    
+    .g-bg {
+        background-color: lighten($main-bg-color, 45);
+        padding: 1% 1%;
+        margin: 1% 1%;
+        box-shadow: 0.05rem 0.05rem 1rem 0.05rem lighten($main-bg-color, 45);
+        font-family: $secondary-font;
+        letter-spacing: 0.1rem;
+    }
+    
+    article {
+        margin: 1% 2%;
+        line-height: 3rem;
+    }

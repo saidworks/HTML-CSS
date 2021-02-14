@@ -1,3 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+html {
+  font-size: 0.625rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Raleway"; }
 
+body {
+  display: grid;
+  grid-template-areas: ". . . . . . . . content";
+  background-color: white;
+  grid-gap: 4rem;
+  margin: 3rem;
+  text-justify: inter-word; }
+  body nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 90%;
+    width: 18%;
+    font-size: 2rem; }
+  body main {
+    grid-area: content;
+    font-size: 1.5rem; }
+  @media (max-width: 40rem) {
+    body {
+      display: flex;
+      flex-direction: column; }
+      body nav {
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 80vh;
+        width: 90vw; } }
 
-/*# sourceMappingURL=main.css.map */
+nav {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 88%;
+  border-right: 0.5rem #c9c9c9 solid; }
+  nav a {
+    text-decoration: none;
+    width: 20rem;
+    padding: 4% 0%; }
+    nav a .line {
+      width: 30rem;
+      padding: 2% 0% 2% 0%;
+      border-bottom: 0.05rem #c9c9c9 solid; }
+
+header {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1% 0%; }
+
+section {
+  margin: 1rem; }
+
+.g-bg {
+  background-color: #f3f3f3;
+  padding: 1% 1%;
+  margin: 1% 1%;
+  box-shadow: 0.05rem 0.05rem 1rem 0.05rem #f3f3f3;
+  font-family: "Open Sans Condensed";
+  letter-spacing: 0.1rem; }
+
+article {
+  margin: 1% 2%;
+  line-height: 3rem; }
