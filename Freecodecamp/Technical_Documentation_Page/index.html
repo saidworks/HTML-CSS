@@ -9,57 +9,27 @@
 </head>
 
 <body>
-    <!--
-    User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 
-    User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
-
-    User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
-
-    User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-    User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-    User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-    User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-    User Story #8: I can see a nav element with a corresponding id="navbar".
-
-    User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-
-    User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-
-    User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
-
-    User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-
-    User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
-    User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-
-    User Story #15: My Technical Documentation page should use at least one media query.
--->
     <nav class="navbar">
         <header>JS Documentation</header>
-        <a href="#introduction">Introduction<div class="line"></div></a>
-        <a href="#what-you-should">What you should already know<div class="line"></div></a>
-        <a href="#js">JavaScript and Java<div class="line"></div></a>
-        <a href="#Hello">Hello world<div class="line"></div></a>
-        <a href="#Variables">Variables<div class="line"></div></a>
-        <a href="#Declaring-variables">Declaring variables<div class="line"></div></a>
-        <a href="#Variable-scope">Variable scope<div class="line"></div></a>
-        <a href="#Global-variables">Global variables<div class="line"></div></a>
-        <a href="#constants">Constants<div class="line"></div></a>
-        <a href="#data-types">Data types<div class="line"></div></a>
-        <a href="#if">if...else statement<div class="line"></div></a>
-        <a href="#while">While statement<div class="line"></div></a>
-        <a href="#function">Function declarations<div class="line"></div></a>
-        <a href="#reference">Reference<div class="line"></div></a>
+        <a class="nav-link" href="#Introduction">Introduction<div class="line"></div></a>
+        <a class="nav-link" href="#What-you-should-know">What you should already know<div class="line"></div></a>
+        <a class="nav-link" href="#Javascript_and_Java">JavaScript and Java<div class="line"></div></a>
+        <a class="nav-link" href="#Hello_world">Hello world<div class="line"></div></a>
+        <a class="nav-link" href="#Variables">Variables<div class="line"></div></a>
+        <a class="nav-link" href="#Declaring-variables">Declaring variables<div class="line"></div></a>
+        <a class="nav-link" href="#Variable-scope">Variable scope<div class="line"></div></a>
+        <a class="nav-link" href="#Global-variables">Global variables<div class="line"></div></a>
+        <a class="nav-link" href="#Constants">Constants<div class="line"></div></a>
+        <a class="nav-link" href="#Data-types">Data types<div class="line"></div></a>
+        <a class="nav-link" href="#If_else_statement">if...else statement<div class="line"></div></a>
+        <a class="nav-link" href="#While_statement">While statement<div class="line"></div></a>
+        <a class="nav-link" href="#Function_declarations">Function declarations<div class="line"></div></a>
+        <a class="nav-link" href="#Reference">Reference<div class="line"></div></a>
     </nav>
     <main>
         <section>
-            <header id="introduction">Introduction</header>
+            <header id="Introduction">Introduction</header>
             <article>
                 JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control
                 over them. JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes
@@ -69,14 +39,14 @@
             </article>
         </section>
         <section>
-            <header id="what-you-should">What you should already know</header>
+            <header id="What-you-should-know">What you should already know</header>
             <article>
                 This guide assumes you have the following basic background: A general understanding of the Internet and the World Wide Web (WWW). Good working knowledge of HyperText Markup Language (HTML). Some programming experience. If you are new to programming, try
                 one of the tutorials linked on the main page about JavaScript.
             </article>
         </section>
         <section>
-            <header id="js">JavaScript and Java</header>
+            <header id="Javascript_and_Java">JavaScript and Java</header>
             <article>
                 JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions
                 and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript. In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small
@@ -86,7 +56,7 @@
                 parameters, and function return types are not explicitly typed.</article>
         </section>
         <section>
-            <header id="Hello">Hello world </header>
+            <header id="Hello_world">Hello world </header>
             <article>
                 To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
                 <div class="g-bg"><span id="g-bg__formula">function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");</span></div> Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</article>
@@ -126,7 +96,7 @@
             </article>
         </section>
         <section>
-            <header id="constants">Constants</header>
+            <header id="Constants">Constants</header>
             <article>
                 You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore
                 characters.
@@ -139,7 +109,7 @@
             </article>
         </section>
         <section>
-            <header id="data-types">Data types</header>
+            <header id="Data-types">Data types</header>
             <article>
                 The latest ECMAScript standard defines seven data types:
                 <ul>
@@ -160,7 +130,7 @@
                 and functions as procedures that your application can perform.</article>
         </section>
         <section>
-            <header id="if"> if...else statement</header>
+            <header id="If_else_statement"> if...else statement</header>
             <article>
                 Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
                 <div class="g-bg"><span id="g-bg__formula">if (condition) { statement_1; } else { statement_2; } </span></div> condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition
@@ -178,7 +148,7 @@
             </article>
         </section>
         <section>
-            <header id="while">While statement </header>
+            <header id="While_statement">While statement </header>
             <article>
                 A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
                 <div class="g-bg"><span id="g-bg__formula">while (condition) statement</span>
@@ -197,7 +167,7 @@
                 < 3 is no longer true, so the loop terminates.</article>
         </section>
         <section>
-            <header id="function">Function declarations</header>
+            <header id="Function_declarations">Function declarations</header>
             <article>function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
                 <ul>
                     <li>The name of the function.</li>
@@ -211,7 +181,7 @@
                 change is not reflected globally or in the calling function.</article>
         </section>
         <section>
-            <header id="reference">Reference</header>
+            <header id="Reference">Reference</header>
             <article>
 
                 All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>
