@@ -14,7 +14,7 @@ body {
   grid-gap: 4rem;
   margin: 3rem;
   text-justify: inter-word; }
-  body nav {
+  body #navbar {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -30,23 +30,23 @@ body {
     body {
       display: flex;
       flex-direction: column; }
-      body nav {
+      body #navbar {
         position: relative;
         overflow-x: hidden;
         overflow-y: auto;
         height: 80vh;
         width: 90vw; } }
 
-nav {
+#navbar {
   overflow-y: auto;
   overflow-x: hidden;
   height: 88%;
   border-right: 0.5rem #c9c9c9 solid; }
-  nav a {
+  #navbar .nav-link {
     text-decoration: none;
     width: 20rem;
     padding: 4% 0%; }
-    nav a .line {
+    #navbar .nav-link .line {
       width: 30rem;
       padding: 2% 0% 2% 0%;
       border-bottom: 0.05rem #c9c9c9 solid; }
@@ -60,6 +60,7 @@ section {
   margin: 1rem; }
 
 .g-bg {
+  display: block;
   background-color: #f3f3f3;
   padding: 1% 1%;
   margin: 1% 1%;

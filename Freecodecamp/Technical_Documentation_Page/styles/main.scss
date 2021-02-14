@@ -15,7 +15,7 @@
         grid-gap: 4rem;
         margin: 3rem;
         text-justify: inter-word;
-        nav {
+        #navbar {
             position: fixed;
             display: flex;
             flex: {
@@ -34,7 +34,7 @@
         @media (max-width:40rem) {
             display: flex;
             flex-direction: column;
-            nav {
+            #navbar {
                 position: relative;
                 overflow-x: hidden;
                 overflow-y: auto;
@@ -44,12 +44,12 @@
         }
     }
     
-    nav {
+    #navbar {
         overflow-y: auto;
         overflow-x: hidden;
         height: 88%;
         border-right: $border-thick;
-        a {
+        .nav-link {
             text-decoration: none;
             width: 20rem;
             padding: 4% 0%;
@@ -72,6 +72,7 @@
     }
     
     .g-bg {
+        display: block;
         background-color: lighten($main-bg-color, 45);
         padding: 1% 1%;
         margin: 1% 1%;
